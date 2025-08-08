@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+/*Página Home*/
+*{
+    margin: 0;
+}
+body{
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+}
+#Paginas{
+    display: flex;
+    gap: 1vw;
+    
+}
+#botao-carrinho{
+    display: flex;
+    align-items: center;
+    background-color: #FFB70E;
+    color: white;
+    width: 12vw;
+    
+    border-radius: 3em;
+    font-size: 1.3vw;
+    gap: 1vw;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+#botao-carrinho img{
+    width: 2vw;
+}
+#cadastro{
+    display: flex;
+    color: #FFB70E;
+    gap: 1vw;
+    align-items: center;
+    font-size: 1.8vw;
+    cursor: pointer;
+}
+.cadastro-link{
+    text-decoration: none;
+    color:#FFB70E;
+}
+#cadastro:hover{
+    font-size: 1.85vw;
+
+}
+.link{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.8vw;
+    
+}
+.link:hover{
+    font-size: 1.85vw;
+}
+#separar{
+    background-color: #FFB70E;
+    height: 0.3vw;
+}
+/* Seção 1 da Home*/
+#secao-1{
+    color: white;
+    padding: 8vw;
+    display: flex;
+    justify-content: space-between;
+}
+.text-secao1{
+    font-size: 1.3vw;
+}
+
+#separacao-pequena{
+    background-color: #FFB70E;
+    height: 0.2vh;
+    width: 25vw;
+}
+#left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+#left-side h1{
+    font-size: 3.5vw;
+}
+#SaibaMais{
+    background-color: #FFB70E;
+    color: white;
+     font-family: "Poppins", sans-serif;
+    width: 12vw;
+    border-radius: 3em;
+    font-size: 1.3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagem-pc{
+    width: 35vw;
+}
+
+/*Seção 2 da Home*/
+#secao-2{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-right: 8vw;
+    padding-left: 8vw;
+    padding-top:4vw;
+    padding-bottom:4vw;
+    gap: 6vw;
+}
+#text-secao2{
+    font-size: 1.8vw;
+}
+.img-secao2{
+    width: 20vw;
+
+}
+#bottom-secao2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+ /*Seção 3 da Home*/
+#secao-3{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding-right: 8vw;
+    padding-left: 8vw;
+    padding-top:4vw;
+    padding-bottom:4vw;
+}
+.icons-secao3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2vw;
+}
+.icons-secao3 img{
+    width: 10vw;
+}
+
+/*Footer*/
+#top-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.2vw;
+    padding-left: 8vw;
+}
+#top-footer img{
+    width: 10vw;
+    
+    
+}
+#mid-footer{
+    color: white;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30vw;
+    padding-right: 8vw ;
+}
+.contatoBox{
+    color: black;
+    background-color: white;
+    width: 15vw;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vw;
+
+}
+#contato{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    
+}
+#icons-footer{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+#direitos{
+    color: white;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: end;
+}
+/*Fim da Página Home*/
+
+
+/*Começo da Pagina Sobre*/
+#secao1-sobre{
+    color: white;
+    padding: 8vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+#text-secao1-sobre{
+    font-size: 1vw;
+}
+.Foto-Empresa-Sobre{
+    width: 30vw;
+}
+#secao2-sobre{
+    padding: 8vw;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#secao2-sobre img{
+    width: 27vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Cadastro*/
