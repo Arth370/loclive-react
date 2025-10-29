@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from '../router/home.jsx'
 import Sobre from '../router/Sobre.jsx'
 import Produtos from '../router/Produtos.jsx'
+import Cadastro  from '../router/Cadastro.jsx'
 
 const router = createBrowserRouter([
   {
