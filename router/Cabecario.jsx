@@ -19,7 +19,7 @@ function Cabecario() {
       </section>
       <section id='cadastro'>
         <img src={People} alt="People" />
-        <Link className='cadastro-link'><p>Cadastre-se</p></Link>
+        <Link className='cadastro-link' to={'/cadastro'}><p>Cadastre-se</p></Link>
       </section>
     </header>
     </>
