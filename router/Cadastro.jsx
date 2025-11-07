@@ -1,5 +1,6 @@
 import React from 'react'
 import './cadastro.css'
+import { Link } from 'react-router-dom'
 
 function Cadastro() {
   return (
@@ -36,7 +37,7 @@ function Cadastro() {
         <button id="botao"><h2>Cadastrar</h2></button>
         <div id="pergunta">
           <h4>Já se cadastrou?</h4>
-          <h4 class="Entrar">Entrar</h4>
+          <Link class="linkC" to={'/Login'}><h4 class="Entrar">Entrar</h4></Link>
         </div>
       </div>
     </div>

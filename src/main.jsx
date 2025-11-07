@@ -6,6 +6,7 @@ import Sobre from '../router/Sobre.jsx'
 import Produtos from '../router/Produtos.jsx'
 import Cadastro  from '../router/Cadastro.jsx'
 import Teclado from '../router/Teclado.jsx'
+import Login from '../router/Login.jsx'
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path:'produtos/teclado',
     element:<Teclado/>
+  },
+  {
+    path: 'login',
+    element: <Login/>
   }
 ])
 
