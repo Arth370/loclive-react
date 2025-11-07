@@ -5,6 +5,7 @@ import Home from '../router/home.jsx'
 import Sobre from '../router/Sobre.jsx'
 import Produtos from '../router/Produtos.jsx'
 import Cadastro  from '../router/Cadastro.jsx'
+import Teclado from '../router/Teclado.jsx'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path:'cadastro',
     element:<Cadastro/>
+  },
+  {
+    path:'produtos/teclado',
+    element:<Teclado/>
   }
 ])
 

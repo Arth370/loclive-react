@@ -12,10 +12,18 @@ import MonitorHP3 from '../imgs/Monitor HP 3.png';
 import MonitorLenovo1 from '../imgs/Monitor Lenovo 1.png';
 import MonitorLenovo2 from '../imgs/Monitor Lenovo 2.png';
 import MonitorLenovo3 from '../imgs/Monitor Lenovo 3.png';
+
+
+
+
+
+
+
+
 import Cabecario from './Cabecario';
 import Footer from './Footer';
 
-function Produtos() {
+function Teclado() {
   const [ativo, setAtivo] = useState('Monitor');
   const botoes = ['Monitor', 'Teclado', 'Mouse', 'Gabinete completo', 'Pc completo'];
 
@@ -146,4 +154,4 @@ function Produtos() {
   );
 }
 
-export default Produtos;
+export default Teclado;
