@@ -7,6 +7,7 @@ import Produtos from '../router/Produtos.jsx'
 import Cadastro  from '../router/Cadastro.jsx'
 import Teclado from '../router/Teclado.jsx'
 import Login from '../router/Login.jsx'
+import Gabinete from '../router/Gabinete'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
   {
     path: 'login',
     element: <Login/>
+  },
+
+  {
+    path: 'produtos/gabinete',
+    element:<Gabinete/>
   }
 ])
 
