@@ -10,6 +10,7 @@ import Login from '../router/Login.jsx'
 import Gabinete from '../router/Gabinete.jsx'
 import Computadores from '../router/Computadores.jsx'
 import Mouse from '../router/Mouse.jsx'
+import Carrinho from '../router/Carrinho.jsx'
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: 'produtos/Mouse',
     element:<Mouse/>
+  },
+  {
+    path: 'carrinho',
+    element:<Carrinho/>
   }
 ])
 

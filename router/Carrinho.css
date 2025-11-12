@@ -1,0 +1,128 @@
+.carrinho-fundo {
+    background-color: #000; 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 0;
+  }
+  
+  .carrinho-conteudo {
+    width: 80%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #ffb703;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(255, 183, 3, 0.3);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .titulo-carrinho {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ffb703;
+    text-shadow: 0 0 10px rgba(255, 183, 3, 0.5);
+  }
+  
+  .item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    border-left: 4px solid #ffb703;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin: 10px 0;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .item-carrinho:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 183, 3, 0.5);
+  }
+  
+  .controle-qtd button {
+    background: #ffb703;
+    border: none;
+    color: #000;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .controle-qtd button:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  .controle-qtd span {
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  .total {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ffb703;
+  }
+  
+  .pagamento {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .opcoes-pagamento {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  
+  .opcoes-pagamento label {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffb703;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .opcoes-pagamento label:hover {
+    background: #ffb703;
+    color: #000;
+  }
+  
+  .btn-finalizar {
+    margin-top: 30px;
+    width: 100%;
+    background: #ffb703;
+    color: #000;
+    font-size: 1.2rem;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .btn-finalizar:hover {
+    background: #fff;
+    color: #000;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 183, 3, 0.6);
+  }
+  
