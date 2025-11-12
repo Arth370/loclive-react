@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 import './produtos.css';
 import Filter from '../imgs/Filter.png';
 import Search from '../imgs/search.png';
-import GabineteDell1 from '../imgs/Gabinete Dell 1.png';
-import GabineteDell2 from '../imgs/Gabinete Dell 2.png';
-import GabineteDell3 from '../imgs/Gabinete Dell 3.png';
-import GabineteHP1 from '../imgs/Gabinete HP 1.png';
-import GabineteHP2 from '../imgs/Gabinete HP 2.png';
-import GabineteHP3 from '../imgs/Gabinete HP 3.png';
-import GabineteLenovo1 from '../imgs/Gabinete Lenovo 1.png';
-import GabineteLenovo2 from '../imgs/Gabinete Lenovo 2.png';
-import GabineteLenovo3 from '../imgs/Gabinete Lenovo 3.png';
+import ComputadoresDell1 from '../imgs/Computadores Dell 1.png';
+import ComputadoresDell2 from '../imgs/Computadores Dell 2.png';
+import ComputadoresDell3 from '../imgs/Computadores Dell 3.png';
+import ComputadoresHP1 from '../imgs/Computadores HP 1.png';
+import ComputadoresHP2 from '../imgs/Computadores HP 2.png';
+import ComputadoresHP3 from '../imgs/Computadores HP 3.png';
+import ComputadoresLenovo1 from '../imgs/Computadores Lenovo 1.png';
+import ComputadoresLenovo2 from '../imgs/Computadores Lenovo 2.png';
+import ComputadoresLenovo3 from '../imgs/Computadores Lenovo 3.png';
 import Cabecario from './Cabecario';
 import Footer from './Footer';
 
-function Gabinete() {
+function Computadores() {
   const [ativo, setAtivo] = useState('Monitor');
   const botoes = ['Monitor', 'Teclado', 'Mouse', 'Gabinete completo', 'Pc completo'];
 
@@ -57,26 +57,26 @@ function Gabinete() {
           <h2 className="marca-titulo">DELL:</h2>
           <div className="produtos-grid">
             <div className="card">
-              <img src={GabineteDell1} alt="Gabinete Dell 1" />
+              <img src={ComputadoresDell1} alt="Computadores Dell 1" />
               <div className="card-info">
-                <p>Gabinete  Dell Pro Slim Plus</p>
-                <span className="preco">R$ 6.451,00</span>
+                <p>Dell 24 All-in-One</p>
+                <span className="preco">R$ 4.999,00</span>
               </div>
             </div>
 
             <div className="card">
-              <img src={GabineteDell2} alt="Gabinete Dell 2" />
+              <img src={ComputadoresDell2} alt="Computadores Dell 2" />
               <div className="card-info">
-                <p>Gabinete Dell Pro Max Tower T2</p>
-                <span className="preco">R$ 4.701,00</span>
+                <p>Cpu Monitor Dell Optiplex Inter Core I5 16gb 1tb Novo 16 Gb</p>
+                <span className="preco">R$ 2.299,00</span>
               </div>
             </div>
 
             <div className="card">
-              <img src={GabineteDell3} alt="Gabinete Dell 3" />
+              <img src={ComputadoresDell3} alt="Computadores Dell 3" />
               <div className="card-info">
-                <p>Gabinete Dell Pro Micro 14a geração</p>
-                <span className="preco">R$  4.365,00</span>
+                <p>Computador Completo Dell Optiplex 7010 i7 3°G 8GB SSD 120GB Dell E1916HF 19″ Teclado e Mouse Win 10 Pro</p>
+                <span className="preco">R$  1.520,00</span>
               </div>
             </div>
           </div>
@@ -85,26 +85,26 @@ function Gabinete() {
           <h2 className="marca-titulo">HP:</h2>
           <div className="produtos-grid">
             <div className="card">
-              <img src={GabineteHP1} alt="Gabinete HP 1" />
+              <img src={ComputadoresHP1} alt="Computadores HP 1" />
               <div className="card-info">
-                <p>Gabinete 280-G5, Intel Core i5, 8GB de Memória, 256gb SSD, Windows 11 Home, 639K3LA, HP</p>
-                <span className="preco">R$ 3.754,00</span>
+                <p>Computador Cpu Hp Inter Core I5 16gb 240 ssd + Monitor 22 pol 16Gb</p>
+                <span className="preco">R$ 1.889,10</span>
               </div>
             </div>
 
             <div className="card">
-              <img src={GabineteHP2} alt="Gabinete HP 2" />
+              <img src={ComputadoresHP2} alt="Computadores HP 2" />
               <div className="card-info">
-                <p>TGabinete Hp Prodesk 600 G1 Intel Core i3 16gb SSD 240GB Wifi </p>
-                <span className="preco">R$ 949,05</span>
+                <p>Computador tudo em um HP Elite Studio 8 G1i Ultra 5-235/ 16 GB/ 512 GB 27 </p>
+                <span className="preco">R$ 12.690,14</span>
               </div>
             </div>
 
             <div className="card">
-              <img src={GabineteHP3} alt="Gabinete HP 3" />
+              <img src={ComputadoresHP3} alt="Computadores HP 3" />
               <div className="card-info">
-                <p>HP Gabinete Pro A Amd Ryzen 5 2400G </p>
-                <span className="preco">R$ 1.799,90</span>
+                <p>PC Completo HP ELITEDESK i7 6° 16gb SSD480 Mon19', Tec, Mou </p>
+                <span className="preco">R$ 2.447,05</span>
               </div>
             </div>
           </div>
@@ -113,26 +113,26 @@ function Gabinete() {
           <h2 className="marca-titulo">LENOVO:</h2>
           <div className="produtos-grid">
             <div className="card">
-              <img src={GabineteLenovo1} alt="Gabinete Lenovo 1" />
+              <img src={ComputadoresLenovo1} alt="Computadores Lenovo 1" />
               <div className="card-info">
-                <p>Gabinete  Lenovo Thinkcentre Neo 50q Gen 4 Business Mff I5</p>
-                <span className="preco">R$ 7.550,00</span>
+                <p>Cpu Lenovo Mini M70q I5 10g 16gb 1tb Ssd + Monitor 22 +win11</p>
+                <span className="preco">R$ 3.068,07</span>
               </div>
             </div>
 
             <div className="card">
-              <img src={GabineteLenovo2} alt="Gabinete Lenovo 2" />
+              <img src={ComputadoresLenovo2} alt="Computadores Lenovo 2" />
               <div className="card-info">
-                <p>Gabinete Servidor Lenovo Think System Sr950</p>
-                <span className="preco">R$ 1.000,00</span>
+                <p>Cpu Monitor Lenovo Intel I5 8 ger 16gb Ssd 1tb Wifi 2.4 5ghz 1000 Gb 16 Gb Intel Hd Graphics 630</p>
+                <span className="preco">R$ 2.454,00</span>
               </div>
             </div>
 
             <div className="card">
-              <img src={GabineteLenovo3} alt="Gabinete Lenovo 3" />
+              <img src={ComputadoresLenovo3} alt="Computadores Lenovo 3" />
               <div className="card-info">
-                <p>Gabinete Lenovo Thinkcentre M720s M920s Preto</p>
-                <span className="preco">R$ 2.479,00</span>
+                <p>Cpu + Monitor Lenovo Mini M93p Intel Core I3 8gb 1tb</p>
+                <span className="preco">R$ 1.699,00</span>
               </div>
             </div>
           </div>
@@ -145,4 +145,4 @@ function Gabinete() {
   );
 }
 
-export default Gabinete;
+export default Computadores;

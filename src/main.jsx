@@ -7,7 +7,8 @@ import Produtos from '../router/Produtos.jsx'
 import Cadastro  from '../router/Cadastro.jsx'
 import Teclado from '../router/Teclado.jsx'
 import Login from '../router/Login.jsx'
-import Gabinete from '../router/Gabinete'
+import Gabinete from '../router/Gabinete.jsx'
+import Computadores from '../router/Computadores.jsx'
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: 'produtos/gabinete',
     element:<Gabinete/>
+  },
+  {
+    path: 'produtos/computadores',
+    element:<Computadores/>
   }
 ])
 
