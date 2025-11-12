@@ -60,7 +60,7 @@ function Computadores() {
               <img src={ComputadoresDell1} alt="Computadores Dell 1" />
               <div className="card-info">
                 <p>Dell 24 All-in-One</p>
-                <span className="preco">R$ 4.999,00</span>
+                <span className="preco">R$ 1.249,75</span>
               </div>
             </div>
 
@@ -68,7 +68,7 @@ function Computadores() {
               <img src={ComputadoresDell2} alt="Computadores Dell 2" />
               <div className="card-info">
                 <p>Cpu Monitor Dell Optiplex Inter Core I5 16gb 1tb Novo 16 Gb</p>
-                <span className="preco">R$ 2.299,00</span>
+                <span className="preco">R$ 999,00</span>
               </div>
             </div>
 
@@ -76,7 +76,7 @@ function Computadores() {
               <img src={ComputadoresDell3} alt="Computadores Dell 3" />
               <div className="card-info">
                 <p>Computador Completo Dell Optiplex 7010 i7 3°G 8GB SSD 120GB Dell E1916HF 19″ Teclado e Mouse Win 10 Pro</p>
-                <span className="preco">R$  1.520,00</span>
+                <span className="preco">R$  800,00</span>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@ function Computadores() {
               <img src={ComputadoresHP1} alt="Computadores HP 1" />
               <div className="card-info">
                 <p>Computador Cpu Hp Inter Core I5 16gb 240 ssd + Monitor 22 pol 16Gb</p>
-                <span className="preco">R$ 1.889,10</span>
+                <span className="preco">R$ 890,00</span>
               </div>
             </div>
 
@@ -96,7 +96,7 @@ function Computadores() {
               <img src={ComputadoresHP2} alt="Computadores HP 2" />
               <div className="card-info">
                 <p>Computador tudo em um HP Elite Studio 8 G1i Ultra 5-235/ 16 GB/ 512 GB 27 </p>
-                <span className="preco">R$ 12.690,14</span>
+                <span className="preco">R$ 2.172,535</span>
               </div>
             </div>
 
@@ -104,7 +104,7 @@ function Computadores() {
               <img src={ComputadoresHP3} alt="Computadores HP 3" />
               <div className="card-info">
                 <p>PC Completo HP ELITEDESK i7 6° 16gb SSD480 Mon19', Tec, Mou </p>
-                <span className="preco">R$ 2.447,05</span>
+                <span className="preco">R$ 980,00</span>
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@ function Computadores() {
               <img src={ComputadoresLenovo1} alt="Computadores Lenovo 1" />
               <div className="card-info">
                 <p>Cpu Lenovo Mini M70q I5 10g 16gb 1tb Ssd + Monitor 22 +win11</p>
-                <span className="preco">R$ 3.068,07</span>
+                <span className="preco">R$ 1.068,07</span>
               </div>
             </div>
 
@@ -124,7 +124,7 @@ function Computadores() {
               <img src={ComputadoresLenovo2} alt="Computadores Lenovo 2" />
               <div className="card-info">
                 <p>Cpu Monitor Lenovo Intel I5 8 ger 16gb Ssd 1tb Wifi 2.4 5ghz 1000 Gb 16 Gb Intel Hd Graphics 630</p>
-                <span className="preco">R$ 2.454,00</span>
+                <span className="preco">R$ 1.00,00</span>
               </div>
             </div>
 
@@ -132,7 +132,7 @@ function Computadores() {
               <img src={ComputadoresLenovo3} alt="Computadores Lenovo 3" />
               <div className="card-info">
                 <p>Cpu + Monitor Lenovo Mini M93p Intel Core I3 8gb 1tb</p>
-                <span className="preco">R$ 1.699,00</span>
+                <span className="preco">R$ 999,00</span>
               </div>
             </div>
           </div>

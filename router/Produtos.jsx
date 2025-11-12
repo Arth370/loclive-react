@@ -61,7 +61,7 @@ function Produtos() {
               <img src={MonitorDell1} alt="Monitor Dell 1" />
               <div className="card-info">
                 <p>Monitor Dell UltraSharp de 43 4K com Hub USB-C — U4323QE</p>
-                <span className="preco">R$ 10.831,00</span>
+                <span className="preco">R$ 2.500,00</span>
               </div>
             </div>
 
@@ -69,7 +69,7 @@ function Produtos() {
               <img src={MonitorDell2} alt="Monitor Dell 2" />
               <div className="card-info">
                 <p>Monitor para videoconferência Dell Pro 34 Plus - P3424WEB</p>
-                <span className="preco">R$ 6.131,00</span>
+                <span className="preco">R$ 1.532,75</span>
               </div>
             </div>
 
@@ -77,7 +77,7 @@ function Produtos() {
               <img src={MonitorDell3} alt="Monitor Dell 3" />
               <div className="card-info">
                 <p>Monitor Curvo Ultrasharp de 49 com hub USB-C Dell – U4924DW</p>
-                <span className="preco">R$ 13.620,00</span>
+                <span className="preco">R$ 3.405,75</span>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@ function Produtos() {
               <img src={MonitorLenovo2} alt="Lenovo 2" />
               <div className="card-info">
                 <p>Monitor Lenovo 23.8” LED Wide Full HD</p>
-                <span className="preco">R$ 1.199,00</span>
+                <span className="preco">R$ 930,99</span>
               </div>
             </div>
 

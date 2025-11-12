@@ -132,7 +132,7 @@ function Teclado() {
               <img src={TecladoLenovo3} alt="Teclado Lenovo 3" />
               <div className="card-info">
                 <p>Teclado Lenovo sem fio – para PC, laptop com Windows – Conexão sem fio – preto</p>
-                <span className="preco">R$ 379,83</span>
+                <span className="preco">R$ 94.95</span>
               </div>
             </div>
           </div>
