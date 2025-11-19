@@ -5,6 +5,7 @@ import { errorHandler } from "./middleware/errorHandler.js";
 import {userModel} from "./users/UserModel.js"
 
 import UserRoutes from "./users/UserRoutes.js"
+import produtosRoutes from "./produtos/produtosRoutes.js"
 
 const app = express()
 
@@ -16,6 +17,12 @@ app.use(cors({
     credentials: true
 }))
 app.use(express.json())
+
+app.use("/api/produtos",produtosRoutes);
+
+app.get("/api/produtos",(req,res)=>{
+    res.status(200).json("App")
+})
 
 app.use("/api/users", UserRoutes);
 
