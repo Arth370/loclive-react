@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './produtos.css';
-
+import { useNavigate } from "react-router-dom"; 
 import Filter from '../imgs/Filter.png';
 import Search from '../imgs/search.png';
 import MonitorDell1 from '../imgs/Monitor Dell 1.png';
@@ -16,8 +16,18 @@ import Cabecario from './Cabecario';
 import Footer from './Footer';
 
 function Produtos() {
+
+  const navigate = useNavigate();
+
   const [ativo, setAtivo] = useState('Monitor');
-  const botoes = ['Monitor', 'Teclado', 'Mouse', 'Gabinete completo', 'Pc completo'];
+
+  const botoes = [
+    { nome: 'Monitor', rota: '/produtos/monitores' },
+    { nome: 'Teclado', rota: '/produtos/teclado' },
+    { nome: 'Mouse', rota: '/produtos/mouse' },
+    { nome: 'Gabinete completo', rota: '/produtos/gabinete' },
+    { nome: 'Pc completo', rota: '/produtos/computadores' }
+  ];
 
   return (
     <>
@@ -25,6 +35,7 @@ function Produtos() {
       <div id="separar"></div>
 
       <div className="produtos">
+
         {/* --- BUSCA --- */}
         <div className="busca">
           <img src={Search} alt="Buscar" className="icon" />
@@ -39,13 +50,16 @@ function Produtos() {
         <div className="filtros">
           <img src={Filter} alt="Filtro" className="icon" />
           <div className="botoes">
-            {botoes.map((nome) => (
+            {botoes.map((btn) => (
               <button
-                key={nome}
-                className={`botao ${ativo === nome ? 'ativo' : ''}`}
-                onClick={() => setAtivo(nome)}
+                key={btn.nome}
+                className={`botao ${ativo === btn.nome ? 'ativo' : ''}`}
+                onClick={() => {
+                  setAtivo(btn.nome);
+                  navigate(btn.rota);   // ⬅ NAVEGAÇÃO FUNCIONANDO
+                }}
               >
-                {nome}
+                {btn.nome}
               </button>
             ))}
           </div>

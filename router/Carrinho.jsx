@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Carrinho.css';
 import Cabecario from './Cabecario';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 function Carrinho() {
   const [itens, setItens] = useState([
@@ -85,7 +86,7 @@ function Carrinho() {
             </div>
           </div>
 
-          <button className="btn-finalizar">Finalizar Compra</button>
+          <Link to={'/Confirmação'}><button className="btn-finalizar">Finalizar Compra</button></Link>
         </div>
       </div>
       <div id="separar"></div>
