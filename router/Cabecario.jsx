@@ -7,23 +7,35 @@ import { Link } from 'react-router-dom'
 function Cabecario() {
   return (
     <>
-    <header>
-      <div id='topo'><img src={Logo} alt="Logo" /></div>
-      <nav id='Paginas'>
+      <header>
+        <div id='topo'>
+          <img src={Logo} alt="Logo" />
+        </div>
+
+        <nav id='Paginas'>
           <Link className='link' to={'/'}><p>Início</p></Link>
           <Link className='link' to={'/sobre'}><p>Sobre</p></Link>
-          <Link className='link' to={'/produtos'}><p >Produtos</p></Link>
-      </nav>
-      <section id='carrinho'>
-        <button id='botao-carrinho'><img src={Carrinho} alt="" />Carrinho</button>
-      </section>
-      <section id='cadastro'>
-        <img src={People} alt="People" />
-        <Link className='cadastro-link' to={'/cadastro'}><p>Cadastre-se</p></Link>
-      </section>
-    </header>
+          <Link className='link' to={'/produtos'}><p>Produtos</p></Link>
+        </nav>
+
+        <section id='carrinho'>
+          <Link to="/carrinho">
+            <button id='botao-carrinho'>
+              <img src={Carrinho} alt="Carrinho" />
+              Carrinho
+            </button>
+          </Link>
+        </section>
+
+        <section id='cadastro'>
+          <img src={People} alt="People" />
+          <Link className='cadastro-link' to={'/cadastro'}>
+            <p>Cadastre-se</p>
+          </Link>
+        </section>
+      </header>
     </>
   )
 }
 
-export default Cabecario
+export default Cabecario;

@@ -1,202 +1,311 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
-/*Página Home*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* RESET */
 *{
     margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
 }
+
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: #000;
     font-family: "Poppins", sans-serif;
 }
-header{
+
+/* ===== CABEÇARIO (MODELO DA 2ª IMAGEM) ===== */
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw;
+    padding: 1.2vw 4vw;
+    background-color: #000; 
 }
-#Paginas{
+
+/* LOGO */
+#topo img {
+    width: 12vw;
+}
+
+/* MENU */
+#Paginas {
     display: flex;
-    gap: 1vw;
-    
+    gap: 4vw;
 }
-#botao-carrinho{
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    transition: 0.2s;
+}
+
+.link:hover {
+    color: #FFB70E;
+}
+
+/* BOTÃO CARRINHO */
+#botao-carrinho {
     display: flex;
     align-items: center;
     background-color: #FFB70E;
+    border: none;
     color: white;
-    width: 12vw;
-    
-    border-radius: 3em;
-    font-size: 1.3vw;
-    gap: 1vw;
+    width: 10vw;
+    height: 3vw;
     justify-content: center;
-    font-family: "Poppins", sans-serif;
+    border-radius: 2vw;
+    font-size: 1.2vw;
+    gap: 0.8vw;
+    cursor: pointer;
+    transition: 0.2s;
 }
-#botao-carrinho img{
+
+#botao-carrinho img {
+    width: 1.6vw;
+}
+
+#botao-carrinho:hover {
+    scale: 1.05;
+}
+
+/* CADASTRO */
+#cadastro {
+    display: flex;
+    align-items: center;
+    gap: 0.7vw;
+}
+
+#cadastro img {
     width: 2vw;
 }
-#cadastro{
-    display: flex;
-    color: #FFB70E;
-    gap: 1vw;
-    align-items: center;
-    font-size: 1.8vw;
-    cursor: pointer;
-}
-.cadastro-link{
-    text-decoration: none;
-    color:#FFB70E;
-}
-#cadastro:hover{
-    font-size: 1.85vw;
 
-}
-.link{
-    color: white;
+.cadastro-link {
     text-decoration: none;
-    cursor: pointer;
-    font-size: 1.8vw;
-    
+    color: #FFB70E;
+    font-size: 1.5vw;
+    transition: 0.2s;
 }
-.link:hover{
-    font-size: 1.85vw;
+
+.cadastro-link:hover {
+    scale: 1.05;
 }
-#separar{
+
+/* REMOVE A LINHA DO LINK DO CARRINHO */
+#carrinho a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* LINHA AMARELA */
+#separar {
     background-color: #FFB70E;
-    height: 0.3vw;
+    height: 0.35vw;
 }
-/* Seção 1 da Home*/
+
+/* ========================= */
+/* Seção 1 da Home           */
+/* ========================= */
 #secao-1{
     color: white;
-    padding: 8vw;
+    padding: 4vw;                 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 .text-secao1{
-    font-size: 1.3vw;
+    font-size: 1.5vw;             
 }
 
 #separacao-pequena{
     background-color: #FFB70E;
-    height: 0.2vh;
-    width: 25vw;
+    height: 0.25vh;
+    width: 18vw;                  
 }
+
 #left-side{
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: 0.7vw;                   
 }
+
 #left-side h1{
-    font-size: 3.5vw;
+    font-size: 2.8vw;             
 }
+
 #SaibaMais{
     background-color: #FFB70E;
     color: white;
-     font-family: "Poppins", sans-serif;
-    width: 12vw;
+    font-family: "Poppins", sans-serif;
+    width: 10vw;                  
     border-radius: 3em;
-    font-size: 1.3vw;
+    font-size: 1.1vw;             
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.imagem-pc{
-    width: 35vw;
+    text-decoration: none !important;
+    padding: 0.6vw 0;             
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    outline: none;
 }
 
-/*Seção 2 da Home*/
+#SaibaMais:hover {
+    transform: scale(1.07);
+    background-color: #ff9900;
+    box-shadow: 0 0 1vw #ff990090;
+}
+
+#SaibaMais a,
+a:link #SaibaMais,a:visited #SaibaMais {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.imagem-pc{
+    width: 38vw;                  
+}
+
+
+/* ========================= */
+/* Seção 2 da Home           */
+/* ========================= */
 #secao-2{
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding-right: 8vw;
-    padding-left: 8vw;
-    padding-top:4vw;
-    padding-bottom:4vw;
-    gap: 6vw;
+    padding: 3vw 6vw;             
+    gap: 4vw;                     
 }
-#text-secao2{
-    font-size: 1.8vw;
-}
-.img-secao2{
-    width: 20vw;
 
+#text-secao2{
+    font-size: 1.3vw;             
 }
+
+.img-secao2{
+    width: 20vw;                  
+}
+
 #bottom-secao2{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
 }
- /*Seção 3 da Home*/
+
+
+/* ========================= */
+/* Seção 3 da Home           */
+/* ========================= */
 #secao-3{
     display: flex;
     color: white;
     justify-content: space-between;
-    padding-right: 8vw;
-    padding-left: 8vw;
-    padding-top:4vw;
-    padding-bottom:4vw;
+    padding: 3vw 6vw;            
 }
+
 .icons-secao3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.2vw;
+    font-size: 1vw;               
 }
+
 .icons-secao3 img{
-    width: 10vw;
+    width: 10vw;                 
 }
 
-/*Footer*/
-#top-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    font-size: 1.2vw;
-    padding-left: 8vw;
-}
-#top-footer img{
-    width: 10vw;
-    
-    
-}
-#mid-footer{
-    color: white;
-    font-size: 1.2vw;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 30vw;
-    padding-right: 8vw ;
-}
-.contatoBox{
-    color: black;
-    background-color: white;
-    width: 15vw;
-    border-radius: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2vw;
 
+/* ========================= */
+/* FOOTER                    */
+/* ========================= */
+#footer {
+    background: black;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
 }
-#contato{
+
+/* TOPO */
+#top-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 6vw;             
+    color: white;
+    font-size: 1.1vw;             
+}
+
+.logo-footer {
+    width: 12vw;                  
+}
+
+.voltar-topo {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    text-decoration: none;
+    color: white;
+}
+
+.seta-topo {
+    width: 1.8vw;                 
+}
+
+/* MEIO DO FOOTER */
+#mid-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 8vw;             
+    color: white;
+    font-size: 1.1vw;               
+}
+
+.mapa-site, .contato, .redes {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
-    
+    gap: 0.5vw;
 }
-#icons-footer{
+
+.mapa-site {
+    margin-left: 10vw;             
+}
+
+.titulo {
+    font-weight: bold;
+    margin-bottom: 0.4vw;
+}
+
+/* CAIXA DE CONTATO */
+.contatoBox {
+    background: white;
+    color: black;
+    border-radius: 2em;
+    width: 15vw;                  
+    text-align: center;
+    padding: 0.4vw 0;
+    font-size: 0.9vw;
+}
+
+/* ÍCONES */
+.icons-footer {
     display: flex;
-    align-items: center;
-    gap: 1vw;
+    gap: 0.8vw;
 }
-#direitos{
+
+.icons-footer img {
+    width: 2.0vw;                 
+}
+
+/* DIREITOS */
+#direitos {
     color: white;
-    font-size: 1.2vw;
-    display: flex;
-    justify-content: end;
+    text-align: center;
+    margin-top: 1vw;
+    font-size: 0.9vw;
 }
-/*Fim da Página Home*/
+
+/* ========================= */
+/* Fim da Página Home        */
+/* ========================= */
 
 
 /*Começo da Pagina Sobre*/
@@ -251,57 +360,3 @@ header{
     border-radius: 0;    
     box-shadow: 0px 0px 40px #00000070;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Cadastro*/
