@@ -10,7 +10,7 @@ function Produtos() {
 
   const navigate = useNavigate();
 
-  const [ativo, setAtivo] = useState('Monitor');
+  const [ativo, setAtivo] = useState('');
 
   const botoes = [
     { nome: 'Monitor', rota: '/produtos/monitores' },
@@ -47,7 +47,8 @@ function Produtos() {
                 className={`botao ${ativo === btn.nome ? 'ativo' : ''}`}
                 onClick={() => {
                   setAtivo(btn.nome);
-                  navigate(btn.rota);   // ⬅ NAVEGAÇÃO FUNCIONANDO
+                  navigate(btn.rota);
+              // ⬅ NAVEGAÇÃO FUNCIONANDO
                 }}
               >
                 {btn.nome}
