@@ -19,7 +19,7 @@ function Teclado() {
 
   const navigate = useNavigate();
 
-  const [ativo, setAtivo] = useState('Monitor');
+  const [ativo, setAtivo] = useState('Teclado');
 
   const botoes = [
     { nome: 'Monitor', rota: '/produtos/monitores' },

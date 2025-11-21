@@ -19,7 +19,7 @@ function Computadores() {
 
   const navigate = useNavigate();
 
-  const [ativo, setAtivo] = useState('Monitor');
+  const [ativo, setAtivo] = useState('Pc completo');
 
   const botoes = [
     { nome: 'Monitor', rota: '/produtos/monitores' },
