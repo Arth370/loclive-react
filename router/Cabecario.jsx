@@ -3,6 +3,7 @@ import Logo from '../imgs/logo.png'
 import People from '../imgs/people.png'
 import Carrinho from '../imgs/carrinho.png'
 import { Link } from 'react-router-dom'
+const nome = localStorage.getItem('nome')
 
 function Cabecario() {
   return (
@@ -28,10 +29,19 @@ function Cabecario() {
         </section>
 
         <section id='cadastro'>
-          <img src={People} alt="People" />
-          <Link className='cadastro-link' to={'/cadastro'}>
+          {localStorage.getItem('nome')?
+            <>
+            <>
+              <img src={People} alt="People" />
+              <p className='cadastro-link'>{nome}</p>
+            </>
+            </>:
+            <>
+            <img src={People} alt="People" />
+            <Link className='cadastro-link' to={'/cadastro'}>
             <p>Cadastre-se</p>
-          </Link>
+            </Link>
+            </>}
         </section>
       </header>
     </>
