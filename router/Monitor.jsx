@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import './produtos.css';
+import { useNavigate } from "react-router-dom"; 
 import Filter from '../imgs/Filter.png';
 import Search from '../imgs/search.png';
-import ComputadoresDell1 from '../imgs/Computadores Dell 1.png';
-import ComputadoresDell2 from '../imgs/Computadores Dell 2.png';
-import ComputadoresDell3 from '../imgs/Computadores Dell 3.png';
-import ComputadoresHP1 from '../imgs/Computadores HP 1.png';
-import ComputadoresHP2 from '../imgs/Computadores HP 2.png';
-import ComputadoresHP3 from '../imgs/Computadores HP 3.png';
-import ComputadoresLenovo1 from '../imgs/Computadores Lenovo 1.png';
-import ComputadoresLenovo2 from '../imgs/Computadores Lenovo 2.png';
-import ComputadoresLenovo3 from '../imgs/Computadores Lenovo 3.png';
+import MonitorDell1 from '../imgs/Monitor Dell 1.png';
+import MonitorDell2 from '../imgs/Monitor Dell 2.png';
+import MonitorDell3 from '../imgs/Monitor Dell 3.png';
+import MonitorHP1 from '../imgs/Monitor HP 1.png';
+import MonitorHP2 from '../imgs/Monitor HP 2.png';
+import MonitorHP3 from '../imgs/Monitor HP 3.png';
+import MonitorLenovo1 from '../imgs/Monitor Lenovo 1.png';
+import MonitorLenovo2 from '../imgs/Monitor Lenovo 2.png';
+import MonitorLenovo3 from '../imgs/Monitor Lenovo 3.png';
 import Cabecario from './Cabecario';
 import Footer from './Footer';
-import { useNavigate } from "react-router-dom"; 
 
-function Computadores() {
+function Monitor() {
 
   const navigate = useNavigate();
 
@@ -35,6 +35,7 @@ function Computadores() {
       <div id="separar"></div>
 
       <div className="produtos">
+
         {/* --- BUSCA --- */}
         <div className="busca">
           <img src={Search} alt="Buscar" className="icon" />
@@ -71,26 +72,26 @@ function Computadores() {
           <h2 className="marca-titulo">DELL:</h2>
           <div className="produtos-grid">
             <div className="card">
-              <img src={ComputadoresDell1} alt="Computadores Dell 1" />
+              <img src={MonitorDell1} alt="Monitor Dell 1" />
               <div className="card-info">
-                <p>Dell 24 All-in-One</p>
-                <span className="preco">R$ 1.249,75</span>
+                <p>Monitor Dell UltraSharp de 43 4K com Hub USB-C — U4323QE</p>
+                <span className="preco">R$ 2.500,00</span>
               </div>
             </div>
 
             <div className="card">
-              <img src={ComputadoresDell2} alt="Computadores Dell 2" />
+              <img src={MonitorDell2} alt="Monitor Dell 2" />
               <div className="card-info">
-                <p>Cpu Monitor Dell Optiplex Inter Core I5 16gb 1tb Novo 16 Gb</p>
-                <span className="preco">R$ 999,00</span>
+                <p>Monitor para videoconferência Dell Pro 34 Plus - P3424WEB</p>
+                <span className="preco">R$ 1.532,75</span>
               </div>
             </div>
 
             <div className="card">
-              <img src={ComputadoresDell3} alt="Computadores Dell 3" />
+              <img src={MonitorDell3} alt="Monitor Dell 3" />
               <div className="card-info">
-                <p>Computador Completo Dell Optiplex 7010 i7 3°G 8GB SSD 120GB Dell E1916HF 19″ Teclado e Mouse Win 10 Pro</p>
-                <span className="preco">R$  800,00</span>
+                <p>Monitor Curvo Ultrasharp de 49 com hub USB-C Dell – U4924DW</p>
+                <span className="preco">R$ 3.405,75</span>
               </div>
             </div>
           </div>
@@ -99,26 +100,26 @@ function Computadores() {
           <h2 className="marca-titulo">HP:</h2>
           <div className="produtos-grid">
             <div className="card">
-              <img src={ComputadoresHP1} alt="Computadores HP 1" />
+              <img src={MonitorHP1} alt="HP V22b" />
               <div className="card-info">
-                <p>Computador Cpu Hp Inter Core I5 16gb 240 ssd + Monitor 22 pol 16Gb</p>
-                <span className="preco">R$ 890,00</span>
+                <p>Monitor Hp V22b 21,5 Full Hd Hdmi Dp Ajuste Altura Mostruário Preto</p>
+                <span className="preco">R$ 645,89</span>
               </div>
             </div>
 
             <div className="card">
-              <img src={ComputadoresHP2} alt="Computadores HP 2" />
+              <img src={MonitorHP2} alt="HP E24 G5" />
               <div className="card-info">
-                <p>Computador tudo em um HP Elite Studio 8 G1i Ultra 5-235/ 16 GB/ 512 GB 27 </p>
-                <span className="preco">R$ 2.172,535</span>
+                <p>Monitor HP E24 G5 24” Full HD</p>
+                <span className="preco">R$ 967,00</span>
               </div>
             </div>
 
             <div className="card">
-              <img src={ComputadoresHP3} alt="Computadores HP 3" />
+              <img src={MonitorHP3} alt="HP V22i" />
               <div className="card-info">
-                <p>PC Completo HP ELITEDESK i7 6° 16gb SSD480 Mon19', Tec, Mou </p>
-                <span className="preco">R$ 980,00</span>
+                <p>Monitor Hp Profissional V22b 21,5 Hdmi Vga Dp Full</p>
+                <span className="preco">R$ 599,00</span>
               </div>
             </div>
           </div>
@@ -127,26 +128,26 @@ function Computadores() {
           <h2 className="marca-titulo">LENOVO:</h2>
           <div className="produtos-grid">
             <div className="card">
-              <img src={ComputadoresLenovo1} alt="Computadores Lenovo 1" />
+              <img src={MonitorLenovo1} alt="Lenovo 1" />
               <div className="card-info">
-                <p>Cpu Lenovo Mini M70q I5 10g 16gb 1tb Ssd + Monitor 22 +win11</p>
-                <span className="preco">R$ 1.068,07</span>
+                <p>Monitor Lenovo TC tiny in one 21.5" Gen 3</p>
+                <span className="preco">R$ 949,99</span>
               </div>
             </div>
 
             <div className="card">
-              <img src={ComputadoresLenovo2} alt="Computadores Lenovo 2" />
+              <img src={MonitorLenovo2} alt="Lenovo 2" />
               <div className="card-info">
-                <p>Cpu Monitor Lenovo Intel I5 8 ger 16gb Ssd 1tb Wifi 2.4 5ghz 1000 Gb 16 Gb Intel Hd Graphics 630</p>
-                <span className="preco">R$ 1.00,00</span>
+                <p>Monitor Lenovo 23.8” LED Wide Full HD</p>
+                <span className="preco">R$ 930,99</span>
               </div>
             </div>
 
             <div className="card">
-              <img src={ComputadoresLenovo3} alt="Computadores Lenovo 3" />
+              <img src={MonitorLenovo3} alt="Lenovo 3" />
               <div className="card-info">
-                <p>Cpu + Monitor Lenovo Mini M93p Intel Core I3 8gb 1tb</p>
-                <span className="preco">R$ 999,00</span>
+                <p>Monitor Lenovo Thinkvision T22i-30 21.5"63b0mar1br</p>
+                <span className="preco">R$ 956,13</span>
               </div>
             </div>
           </div>
@@ -159,4 +160,4 @@ function Computadores() {
   );
 }
 
-export default Computadores;
+export default Monitor;

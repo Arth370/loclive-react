@@ -13,10 +13,21 @@ import MouseLenovo2 from '../imgs/Mouse Lenovo 2.png';
 import MouseLenovo3 from '../imgs/Mouse Lenovo 3.png';
 import Cabecario from './Cabecario';
 import Footer from './Footer';
+import { useNavigate } from "react-router-dom"; 
 
 function Mouse() {
+
+  const navigate = useNavigate();
+
   const [ativo, setAtivo] = useState('Monitor');
-  const botoes = ['Monitor', 'Teclado', 'Mouse', 'Gabinete completo', 'Pc completo'];
+
+  const botoes = [
+    { nome: 'Monitor', rota: '/produtos/monitores' },
+    { nome: 'Teclado', rota: '/produtos/teclado' },
+    { nome: 'Mouse', rota: '/produtos/mouse' },
+    { nome: 'Gabinete completo', rota: '/produtos/gabinete' },
+    { nome: 'Pc completo', rota: '/produtos/computadores' }
+  ];
 
   return (
     <>
@@ -38,13 +49,16 @@ function Mouse() {
         <div className="filtros">
           <img src={Filter} alt="Filtro" className="icon" />
           <div className="botoes">
-            {botoes.map((nome) => (
+            {botoes.map((btn) => (
               <button
-                key={nome}
-                className={`botao ${ativo === nome ? 'ativo' : ''}`}
-                onClick={() => setAtivo(nome)}
+                key={btn.nome}
+                className={`botao ${ativo === btn.nome ? 'ativo' : ''}`}
+                onClick={() => {
+                  setAtivo(btn.nome);
+                  navigate(btn.rota);   // ⬅ NAVEGAÇÃO FUNCIONANDO
+                }}
               >
-                {nome}
+                {btn.nome}
               </button>
             ))}
           </div>
