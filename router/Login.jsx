@@ -31,10 +31,13 @@ function Login() {
         console.log(users.find((element)=> element.email == email))
         if(users.find((element)=> element.email == email)!=undefined){
             const confirmar = users.find((element)=> element.email == email)
+            
             if(senha == confirmar.senha){
-                window.location.href='http://localhost:5173/produtos'
-                localStorage.getItem('email',setEmail)
-                localStorage.getItem('senha',setSenha)
+                localStorage.setItem('nome',confirmar.nome)
+                localStorage.setItem('senha',senha)
+                if(localStorage.getItem('nome')!=undefined){
+                   console.log('ta ai')
+                }
             }
             else{
                 alert('Senha incorreta')
