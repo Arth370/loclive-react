@@ -58,9 +58,9 @@ function Home() {
             <h1>100% de Satisfação</h1>
           </div>
 
-          <div className='icons-secao3'>
+          <div className='icons-secao3' id='inconia'>
             <img src={chat} alt="" />
-            <h1>Canal Especializado<br/>Para Clientes</h1>
+            <h1>Canal Especializado Para Clientes</h1>
           </div>
 
           <div className='icons-secao3'>

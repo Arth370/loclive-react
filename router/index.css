@@ -391,3 +391,9 @@ a:link #SaibaMais,a:visited #SaibaMais {
     scrollbar-width: auto;           /* deixa mais grosso no Firefox */
     scrollbar-color: #FFB70E #000000; /* thumb amarelo, trilha preta */
 }
+
+/* ajuste */
+#inconia {        
+    width: 24vw;
+    text-align: center;
+}
