@@ -5,10 +5,9 @@ import Footer from './Footer';
 import { Link } from 'react-router-dom';
 
 function Carrinho() {
-  const [itens, setItens] = useState([
-    { id: 1, nome: 'Monitor Dell 24"', preco: 1299.90, qtd: 1 },
-    { id: 2, nome: 'Teclado Mecânico RGB', preco: 399.90, qtd: 1 },
-  ]);
+
+  // Carrinho começa vazio
+  const [itens, setItens] = useState([]);
 
   const [metodo, setMetodo] = useState('cartao');
 
@@ -30,10 +29,19 @@ function Carrinho() {
     <>
       <Cabecario />
       <div id="separar"></div>
+
       <div className="carrinho-fundo">
         <div className="carrinho-conteudo">
           <h1 className="titulo-carrinho">🛒 Seu Carrinho</h1>
 
+          {/* MENSAGEM QUANDO ESTIVER VAZIO */}
+          {itens.length === 0 && (
+            <p style={{ textAlign: 'center', color: '#ffb703', marginBottom: '20px' }}>
+              Seu carrinho está vazio no momento.
+            </p>
+          )}
+
+          {/* LISTAGEM DINÂMICA */}
           {itens.map(item => (
             <div className="item-carrinho" key={item.id}>
               <div className="item-info">
@@ -48,8 +56,10 @@ function Carrinho() {
             </div>
           ))}
 
+          {/* TOTAL */}
           <h2 className="total">Total: R$ {total.toFixed(2)}</h2>
 
+          {/* MÉTODOS DE PAGAMENTO */}
           <div className="pagamento">
             <h3>Método de Pagamento</h3>
             <div className="opcoes-pagamento">
@@ -86,9 +96,23 @@ function Carrinho() {
             </div>
           </div>
 
-          <Link to={'/Confirmação'}><button className="btn-finalizar">Finalizar Compra</button></Link>
+          {/* BOTÃO FINALIZAR */}
+          {itens.length === 0 ? (
+            <button 
+              className="btn-finalizar"
+              style={{ opacity: 0.5, cursor: 'not-allowed' }}
+              onClick={() => alert("Adicione um produto ao carrinho antes de finalizar a compra.")}
+            >
+              Finalizar Compra
+            </button>
+          ) : (
+            <Link to={'/Confirmação'}>
+              <button className="btn-finalizar">Finalizar Compra</button>
+            </Link>
+          )}
         </div>
       </div>
+
       <div id="separar"></div>
       <Footer />
     </>

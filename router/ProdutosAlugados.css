@@ -1,0 +1,114 @@
+/* ===== CONTAINER PRINCIPAL ===== */
+
+.produtos-container {
+    width: 85%;
+    margin: 2vw auto;
+    color: #1b1b1b;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .titulo {
+    font-size: 2vw;
+    font-weight: 700;
+    margin-bottom: 0.3vw;
+  }
+  
+  .subtitulo {
+    font-size: 1vw;
+    color: #666;
+    margin-bottom: 2vw;
+  }
+  
+  /* ===== CARDS DE ESTATÍSTICA ===== */
+  
+  .linha-cards {
+    display: flex;
+    gap: 1.5vw;
+    margin-bottom: 2vw;
+  }
+  
+  .card-info {
+    width: 20%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.2vw;
+    box-shadow: 0 0 10px rgba(0,0,0,0.06);
+    border: 1px solid #eee;
+  }
+  
+  .card-info p {
+    font-size: .9vw;
+    color: #666;
+  }
+  
+  .card-info h2 {
+    margin-top: .3vw;
+    margin-bottom: .3vw;
+    font-size: 1.7vw;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .card-info span {
+    font-size: .8vw;
+    color: #777;
+  }
+  
+  /* ===== BUSCA + FILTROS ===== */
+  
+  .filtros-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vw;
+  }
+  
+  .input-busca {
+    width: 35%;
+    padding: .8vw 1vw;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: .9vw;
+  }
+  
+  .filtros-botoes button {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: .7vw 1.2vw;
+    font-size: .9vw;
+    border-radius: 8px;
+    margin-left: .5vw;
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+  .filtros-botoes .ativo {
+    background: #1c95f3;
+    color: #fff;
+    border-color: #1c95f3;
+  }
+  
+  /* ===== ÁREA VAZIA ===== */
+  
+  .area-vazia {
+    text-align: center;
+    margin-top: 5vw;
+  }
+  
+  .area-vazia img {
+    width: 7vw;
+    opacity: .7;
+  }
+  
+  .area-vazia h3 {
+    margin-top: 1vw;
+    font-size: 1.3vw;
+    font-weight: 600;
+  }
+  
+  .area-vazia p {
+    margin-top: .5vw;
+    font-size: 1vw;
+    color: #777;
+  }
+  
