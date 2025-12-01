@@ -14,6 +14,7 @@ import Carrinho from '../router/Carrinho.jsx'
 import Confirmação from '../router/Confirmação.jsx'
 import Monitor from '../router/Monitor.jsx'
 import Perfil from '../router/perfil.jsx'
+import ProdutosAlugados from '../router/ProdutosAlugados.jsx'
 
 const router = createBrowserRouter([
   {
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
   {
     path: 'perfil',
     element:<Perfil/>
+  },
+  {
+    path: 'produtosalugados',
+    element:<ProdutosAlugados/>
   }
 ])
 
