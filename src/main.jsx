@@ -13,6 +13,7 @@ import Mouse from '../router/Mouse.jsx'
 import Carrinho from '../router/Carrinho.jsx'
 import Confirmação from '../router/Confirmação.jsx'
 import Monitor from '../router/Monitor.jsx'
+import Perfil from '../router/perfil.jsx'
 
 const router = createBrowserRouter([
   {
@@ -39,7 +40,6 @@ const router = createBrowserRouter([
     path: 'login',
     element: <Login/>
   },
-
   {
     path: 'produtos/gabinete',
     element:<Gabinete/>
@@ -63,6 +63,10 @@ const router = createBrowserRouter([
   {
     path: 'produtos/monitores',
     element:<Monitor/>
+  },
+  {
+    path: 'perfil',
+    element:<Perfil/>
   }
 ])
 
