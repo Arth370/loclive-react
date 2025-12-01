@@ -19,7 +19,7 @@ function Gabinete() {
 
   const navigate = useNavigate();
 
-  const [ativo, setAtivo] = useState('Monitor');
+  const [ativo, setAtivo] = useState('Gabinete completo');
 
   const botoes = [
     { nome: 'Monitor', rota: '/produtos/monitores' },

@@ -19,7 +19,7 @@ function Mouse() {
 
   const navigate = useNavigate();
 
-  const [ativo, setAtivo] = useState('Monitor');
+  const [ativo, setAtivo] = useState('Mouse');
 
   const botoes = [
     { nome: 'Monitor', rota: '/produtos/monitores' },
