@@ -146,7 +146,7 @@
 }
 
 /* caixa amarela com texto e preço (parte inferior do card) */
-.card-info {
+.card-info{
   background-color: #ffb800;
   border-radius: 16px;
   margin: 14px 16px 20px 16px;
@@ -162,7 +162,7 @@
 /* texto e preço dentro da caixa amarela */
 .card-info p {
   font-size: 15px;
-  color: #111;
+  color: #111111;
   margin: 0;
   font-weight: 600;
   text-align: center;
@@ -171,7 +171,7 @@
 
 .preco {
   font-weight: 800;
-  color: #111;
+  color: #000000;
   font-size: 17px;
 }
 
@@ -189,4 +189,55 @@
   .produtos-grid { justify-content: center; }
   .card { width: 90%; max-width: 420px; }
   .card img { height: 260px; } /* aumenta visualmente a imagem em mobile */
+}
+
+/* Pop-up na tela*/
+
+.none{
+  display: none;
+}
+
+.modal-overlay {
+  position: fixed; /* Posição fixa em relação à janela do navegador */
+  z-index: 1000; /* Garante que fique acima de tudo */
+  left: 0;
+  top: 0;
+  width: 100%; /* Largura total da tela */
+  height: 100%; /* Altura total da tela */
+  background-color: rgba(0, 0, 0, 0.9); /* Fundo preto semi-transparente */
+  
+  /* Centraliza o conteúdo dentro dele */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto; 
+}
+
+/* Estilo do conteúdo interno do modal */
+.modal-conteudo {
+  background-color: #fefefe;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Estilo do botão de fechar */
+.fechar-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: #aaa;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fechar-btn:hover,
+.fechar-btn:focus {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
 }

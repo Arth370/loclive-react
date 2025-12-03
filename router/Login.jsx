@@ -37,6 +37,7 @@ function Login() {
                 localStorage.setItem('senha',senha)
                 if(localStorage.getItem('nome')!=undefined){
                    console.log('ta ai')
+                   window.location.href = 'http://localhost:5173/produtos'
                 }
             }
             else{
