@@ -10,15 +10,20 @@ function ProdutosAlugados() {
   return (
     <>
       <Cabecario />
+      <div id="separar"></div>
 
-      <div className="produtos-container">
+
+      <div className="produtos-alugados">
+
 
         <h1 className="titulo">Produtos Alugados</h1>
         <p className="subtitulo">Gerencie seus aluguéis e acompanhe os pagamentos</p>
 
+
         {/* === CARDS DE ESTATÍSTICAS === */}
         <div className="linha-cards">
           <div className="card-info">
+
             <p>Total de Aluguéis</p>
             <h2>0</h2>
             <span>produtos ativos</span>
@@ -90,6 +95,7 @@ function ProdutosAlugados() {
         </div>
 
       </div>
+      <div id="separar"></div>
 
       <Footer />
     </>
