@@ -37,12 +37,12 @@
     border: 1px solid #eee;
   }
   
-  .card-info p {
+.card-info-alugados p {
     font-size: .9vw;
     color: #666;
   }
   
-  .card-info h2 {
+.card-info-alugados h2 {
     margin-top: .3vw;
     margin-bottom: .3vw;
     font-size: 1.7vw;
@@ -50,7 +50,7 @@
     color: #000;
   }
   
-  .card-info span {
+.card-info-alugados span {
     font-size: .8vw;
     color: #777;
   }
@@ -143,7 +143,7 @@
   margin-bottom: 2vw;
 }
 
-.card-info {
+.card-info-alug2 {
   width: 20%;
   background: #111111; /* preto suave */
   border-radius: 14px;
@@ -153,24 +153,24 @@
   transition: 0.2s;
 }
 
-.card-info:hover {
+.card-info-alug2:hover {
   transform: translateY(-4px);
   box-shadow: 0 0 25px rgba(0,0,0,0.65);
 }
 
-.card-info p {
+.card-info-alug2 p {
   font-size: 1vw;
   color: #e5e5e5;
 }
 
-.card-info h2 {
+.card-info-alug2 h2 {
   margin: .4vw 0;
   font-size: 2vw;
   font-weight: 700;
   color: #ffffff;
 }
 
-.card-info span {
+.card-info-alug2 span {
   font-size: .9vw;
   color: #bbbbbb;
 }

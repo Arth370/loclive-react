@@ -21,10 +21,10 @@ function Carrinho() {
         
         // Obtém o valor associado a essa chave
        
-        if(chave != 'nome' && chave!='senha'){
+        if(chave != 'nome' && chave!='senha'&& chave!='email'){
           allItems[chave] = JSON.parse(localStorage.getItem(chave));
          
-          total = total + allItems[chave].preco
+          total = total + (allItems[chave].preco * allItems[chave].qnt)
           
         }
     }

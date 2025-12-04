@@ -34,6 +34,7 @@ function Login() {
             
             if(senha == confirmar.senha){
                 localStorage.setItem('nome',confirmar.nome)
+                localStorage.setItem('email',confirmar.email)
                 localStorage.setItem('senha',senha)
                 if(localStorage.getItem('nome')!=undefined){
                    console.log('ta ai')

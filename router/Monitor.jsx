@@ -60,8 +60,19 @@ listarLocalStorage()
       const div = document.getElementById(a);
       const testando = a
       function teste(a,b,c,d){
-        let obj = {imagem:a,produto:b,preco:c, qnt:1}
-        localStorage.setItem(`${d}`,JSON.stringify(obj))
+        if(localStorage.getItem(`${d}`)){
+          let valor = JSON.parse(localStorage.getItem(`${d}`))
+          valor.qnt++
+          console.log(valor.qnt)
+          localStorage.setItem(`${d}`,JSON.stringify(valor))
+          alert('item adicionado ao carrinho')
+
+          
+        }else{
+          let obj = {imagem:a,produto:b,preco:c, qnt:1}
+          localStorage.setItem(`${d}`,JSON.stringify(obj))
+          alert('item adicionado ao carrinho')
+        }
       }
       console.log(meuPopUp)
       Imagem.src=div.firstElementChild.src
@@ -220,7 +231,7 @@ listarLocalStorage()
             <h2 id='produto-nome'>Bem-vindo ao Pop-up Fullscreen!</h2>
             <img id='imagem' src='' alt="" />
             <p id='preco'></p>
-            <button id='botoras'> fodaseAdicionar ao Carrinho</button>
+            <button id='botoras'>Adicionar ao Carrinho</button>
         </div>
         </div>
       </div>

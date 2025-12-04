@@ -24,7 +24,7 @@ function ProdutosAlugados() {
 
         {/* === CARDS DE ESTATÍSTICAS === */}
         <div className="linha-cards">
-          <div className="card-info">
+          <div className="card-info-alug2">
 
             <p>Total de Aluguéis</p>
             <h2>0</h2>

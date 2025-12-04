@@ -28,6 +28,54 @@ function Mouse() {
     { nome: 'Gabinete completo', rota: '/produtos/gabinete' },
     { nome: 'Pc completo', rota: '/produtos/computadores' }
   ];
+      function abrirPopUp(a) {
+      const meuPopUp = document.getElementById('meuPopUp');
+      const Nome = document.getElementById('produto-nome');
+      const Imagem = document.getElementById('imagem');
+      const Preco = document.getElementById('preco');
+      const botao = document.getElementById('botoras');
+
+
+
+
+      const div = document.getElementById(a);
+      const testando = a
+      function teste(a,b,c,d){
+        if(localStorage.getItem(`${d}`)){
+          let valor = JSON.parse(localStorage.getItem(`${d}`))
+          valor.qnt++
+          console.log(valor.qnt)
+          localStorage.setItem(`${d}`,JSON.stringify(valor))
+          alert('item adicionado ao carrinho')
+
+          
+        }else{
+          let obj = {imagem:a,produto:b,preco:c, qnt:1}
+          localStorage.setItem(`${d}`,JSON.stringify(obj))
+          alert('item adicionado ao carrinho')
+        }
+
+      }
+      console.log(meuPopUp)
+      Imagem.src=div.firstElementChild.src
+      Nome.textContent=div.lastElementChild.firstElementChild.textContent
+      Preco.textContent=` R$ ${div.lastElementChild.lastElementChild.textContent}`
+      
+      meuPopUp.classList.add('modal-overlay')
+      // Opcional: Impede o scroll da página principal enquanto o modal está aberto
+      botao.addEventListener('click', (a,b,c,d)=> {
+        teste(div.firstElementChild.src,div.lastElementChild.firstElementChild.textContent,parseFloat(div.lastElementChild.lastElementChild.textContent.replace(',', '.')),testando)
+      });
+
+  }
+
+  // Função chamada pelo botão de fechar (×) para fechar o pop-up
+  function fecharPopUp() {
+    const meuPopUp = document.getElementById('meuPopUp');
+    console.log(meuPopUp)
+      meuPopUp.classList.remove('modal-overlay')
+      // Opcional: Restaura o scroll da página principal
+  }
 
   return (
     <>
@@ -70,27 +118,27 @@ function Mouse() {
           {/* --- DELL --- */}
           <h2 className="marca-titulo">DELL:</h2>
           <div className="produtos-grid">
-            <div className="card">
+            <div className="card" id='MouseDell1' onClick={()=>abrirPopUp('MouseDell1')}>
               <img src={MouseDell1} alt="Mouse Dell 1" />
               <div className="card-info">
                 <p>Mouse Dell MS116 Preto</p>
-                <span className="preco">R$ 66,00</span>
+                <span className="preco">66,00</span>
               </div>
             </div>
 
-            <div className="card">
+            <div className="card" id='MouseDell2' onClick={()=>abrirPopUp('MouseDell2')}>
               <img src={MouseDell2} alt="Mouse Dell 2" />
               <div className="card-info">
                 <p>Mouse Dell - WM 118</p>
-                <span className="preco">R$ 75,00</span>
+                <span className="preco">75,00</span>
               </div>
             </div>
 
-            <div className="card">
+            <div className="card" id='MouseDell3' onClick={()=>abrirPopUp('MouseDell3')}>
               <img src={MouseDell3} alt="Mouse Dell 3" />
               <div className="card-info">
                 <p>Mouse Dell Pro Plus - MS5320W</p>
-                <span className="preco">R$ 299,00</span>
+                <span className="preco">299,00</span>
               </div>
             </div>
           </div>
@@ -98,27 +146,27 @@ function Mouse() {
           {/* --- HP --- */}
           <h2 className="marca-titulo">HP:</h2>
           <div className="produtos-grid">
-            <div className="card">
+            <div className="card" id='MouseHP1' onClick={()=>abrirPopUp('MouseHP1')}>
               <img src={MouseHP1} alt="Mouse HP 1" />
               <div className="card-info">
                 <p>Mouse HP USB 100 Preto - Sensor Óptico</p>
-                <span className="preco">R$ 28,61</span>
+                <span className="preco">28,61</span>
               </div>
             </div>
 
-            <div className="card">
+            <div className="card" id='MouseHP2' onClick={()=>abrirPopUp('MouseHP2')}>
               <img src={MouseHP2} alt="Mouse HP 2" />
               <div className="card-info">
                 <p>Mouse Sem Fio HP 200 Oman</p>
-                <span className="preco">R$ 59,00</span>
+                <span className="preco">59,00</span>
               </div>
             </div>
 
-            <div className="card">
+            <div className="card" id='MouseHP3' onClick={()=>abrirPopUp('MouseHP3')}>
               <img src={MouseHP3} alt="Mouse HP 3" />
               <div className="card-info">
                 <p>Mouse Sem fio 240, Bluetooth, Branco</p>
-                <span className="preco">R$ 85,40</span>
+                <span className="preco">85,40</span>
               </div>
             </div>
           </div>
@@ -126,33 +174,43 @@ function Mouse() {
           {/* --- LENOVO --- */}
           <h2 className="marca-titulo">LENOVO:</h2>
           <div className="produtos-grid">
-            <div className="card">
+            <div className="card" id='MouseLenovo1' onClick={()=>abrirPopUp('MouseLenovo1')}>
               <img src={MouseLenovo1} alt="Mouse Lenovo 1" />
               <div className="card-info">
                 <p>Mouse Essential Usb Lenovo</p>
-                <span className="preco">R$ 43,99</span>
+                <span className="preco">43,99</span>
               </div>
             </div>
 
-            <div className="card">
+            <div className="card" id='MouseLenovo2' onClick={()=>abrirPopUp('MouseLenovo2')}>
               <img src={MouseLenovo2} alt="Mouse Lenovo 2" />
               <div className="card-info">
                 <p>Mouse Sem Fio Lenovo 300 Compact</p>
-                <span className="preco">R$ 47,40</span>
+                <span className="preco">47,40</span>
               </div>
             </div>
 
-            <div className="card">
+            <div className="card" id='MouseLenovo3' onClick={()=>abrirPopUp('MouseLenovo3')}>
               <img src={MouseLenovo3} alt="Mouse Lenovo 3" />
               <div className="card-info">
                 <p>Mouse Bluetooth Lenovo WI 310</p>
-                <span className="preco">R$ 90,00</span>
+                <span className="preco">90,00</span>
               </div>
             </div>
           </div>
         </div>
       </div>
+        <div id='meuPopUp' class="none">
+        <div class="modal-conteudo">
 
+            <span class="fechar-btn" onClick={fecharPopUp}>&times;</span>
+            
+            <h2 id='produto-nome'>Bem-vindo ao Pop-up Fullscreen!</h2>
+            <img id='imagem' src='' alt="" />
+            <p id='preco'></p>
+            <button id='botoras'>Adicionar ao Carrinho</button>
+        </div>
+        </div>
       <div id="separar"></div>
       <Footer />
     </>
