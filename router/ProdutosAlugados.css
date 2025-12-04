@@ -1,6 +1,6 @@
 /* ===== CONTAINER PRINCIPAL ===== */
 
-.produtos-container {
+.produtos-alugados-container {
     width: 85%;
     margin: 2vw auto;
     color: #1b1b1b;
@@ -27,7 +27,7 @@
     margin-bottom: 2vw;
   }
   
-  .card-info {
+  .card-info-alugados {
     width: 20%;
     background: #fff;
     border-radius: 12px;

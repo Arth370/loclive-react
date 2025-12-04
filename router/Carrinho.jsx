@@ -4,26 +4,47 @@ import Cabecario from './Cabecario';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 
+let loading = true
+const allItems=[]
+let total = 0
+let value
+
 function Carrinho() {
 
+  
+
+  function iniciar(){
+        for (let i = 0; i < localStorage.length; i++) {
+        // Obtém o nome da chave pelo índice
+        const chave = localStorage.key(i);
+        
+        
+        // Obtém o valor associado a essa chave
+       
+        if(chave != 'nome' && chave!='senha'){
+          allItems[chave] = JSON.parse(localStorage.getItem(chave));
+         
+          total = total + allItems[chave].preco
+          
+        }
+    }
+  }
+  if(loading){
+    iniciar()
+    loading=false
+    
+    
+  }
+  const objetos = Object.values(allItems)
+  console.log(total)
+
   // Carrinho começa vazio
-  const [itens, setItens] = useState([]);
+ 
 
   const [metodo, setMetodo] = useState('cartao');
 
-  const aumentarQtd = (id) => {
-    setItens(itens.map(item => 
-      item.id === id ? { ...item, qtd: item.qtd + 1 } : item
-    ));
-  };
 
-  const diminuirQtd = (id) => {
-    setItens(itens.map(item => 
-      item.id === id && item.qtd > 1 ? { ...item, qtd: item.qtd - 1 } : item
-    ));
-  };
 
-  const total = itens.reduce((acc, item) => acc + item.preco * item.qtd, 0);
 
   return (
     <>
@@ -31,33 +52,29 @@ function Carrinho() {
       <div id="separar"></div>
 
       <div className="carrinho-fundo">
-        <div className="carrinho-conteudo">
+        <div id='conteudo-do-carrinho' className="carrinho-conteudo">
           <h1 className="titulo-carrinho">🛒 Seu Carrinho</h1>
 
           {/* MENSAGEM QUANDO ESTIVER VAZIO */}
-          {itens.length === 0 && (
-            <p style={{ textAlign: 'center', color: '#ffb703', marginBottom: '20px' }}>
-              Seu carrinho está vazio no momento.
-            </p>
-          )}
+          {}
 
           {/* LISTAGEM DINÂMICA */}
-          {itens.map(item => (
-            <div className="item-carrinho" key={item.id}>
+          {objetos.map((objeto)=>(
+              <div className="item-carrinho" key={objeto}>
               <div className="item-info">
-                <h2>{item.nome}</h2>
-                <p>R$ {item.preco.toFixed(2)}</p>
+                <h2>{objeto.produto}</h2>
+                <p>R$ {objeto.preco}</p>
               </div>
               <div className="controle-qtd">
-                <button onClick={() => diminuirQtd(item.id)}>-</button>
-                <span>{item.qtd}</span>
-                <button onClick={() => aumentarQtd(item.id)}>+</button>
+                
+                <span>{objeto.qnt}</span>
+                
               </div>
             </div>
           ))}
 
           {/* TOTAL */}
-          <h2 className="total">Total: R$ {total.toFixed(2)}</h2>
+          <h2 className="total">Total: R$ {total}</h2>
 
           {/* MÉTODOS DE PAGAMENTO */}
           <div className="pagamento">
@@ -97,7 +114,7 @@ function Carrinho() {
           </div>
 
           {/* BOTÃO FINALIZAR */}
-          {itens.length === 0 ? (
+          {objetos.length === 0 ? (
             <button 
               className="btn-finalizar"
               style={{ opacity: 0.5, cursor: 'not-allowed' }}

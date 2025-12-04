@@ -11,7 +11,7 @@ function ProdutosAlugados() {
     <>
       <Cabecario />
 
-      <div className="produtos-container">
+      <div className="produtos-alugados-container">
 
         <h1 className="titulo">Produtos Alugados</h1>
         <p className="subtitulo">Gerencie seus aluguéis e acompanhe os pagamentos</p>
@@ -24,19 +24,19 @@ function ProdutosAlugados() {
             <span>produtos ativos</span>
           </div>
 
-          <div className="card-info">
+          <div className="card-info-alugados">
             <p>Receita Mensal</p>
             <h2>R$ 0,00</h2>
             <span>total previsto</span>
           </div>
 
-          <div className="card-info">
+          <div className="card-info-alugados">
             <p>Pagamentos em Dia</p>
             <h2>0</h2>
             <span>0% do total</span>
           </div>
 
-          <div className="card-info">
+          <div className="card-info-alugados">
             <p>Atrasados</p>
             <h2>0</h2>
             <span>nenhum atraso</span>

@@ -33,7 +33,7 @@ function Cabecario() {
             <>
             <>
               <img src={People} alt="People" />
-              <p className='cadastro-link'>{nome}</p>
+              <Link className='cadastro-link' to={'/perfil'}>{nome}</Link>
             </>
             </>:
             <>

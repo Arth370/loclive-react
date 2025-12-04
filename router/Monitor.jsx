@@ -58,20 +58,20 @@ listarLocalStorage()
 
 
       const div = document.getElementById(a);
-      function teste(a,b,c){
-        localStorage.setItem(`${a} imagem`,a)
-        localStorage.setItem(`${b} Nome`,b)
-        localStorage.setItem(`${a} Preco`,c)
+      const testando = a
+      function teste(a,b,c,d){
+        let obj = {imagem:a,produto:b,preco:c, qnt:1}
+        localStorage.setItem(`${d}`,JSON.stringify(obj))
       }
       console.log(meuPopUp)
       Imagem.src=div.firstElementChild.src
       Nome.textContent=div.lastElementChild.firstElementChild.textContent
-      Preco.textContent=div.lastElementChild.lastElementChild.textContent
+      Preco.textContent=` R$ ${div.lastElementChild.lastElementChild.textContent}`
       
       meuPopUp.classList.add('modal-overlay')
       // Opcional: Impede o scroll da página principal enquanto o modal está aberto
-      botao.addEventListener('click', (a,b,c)=> {
-        teste(div.firstElementChild.src,div.lastElementChild.firstElementChild.textContent,div.lastElementChild.lastElementChild.textContent)
+      botao.addEventListener('click', (a,b,c,d)=> {
+        teste(div.firstElementChild.src,div.lastElementChild.firstElementChild.textContent,parseFloat(div.lastElementChild.lastElementChild.textContent.replace(',', '.')),testando)
       });
 
   }
@@ -134,7 +134,7 @@ listarLocalStorage()
               <img src={MonitorDell1} alt="Monitor Dell 1" />
               <div className="card-info" >
                 <p>Monitor Dell UltraSharp de 43 4K com Hub USB-C — U4323QE</p>
-                <span className="preco">R$ 2.500,00</span>
+                <span className="preco">2500,00</span>
               </div>
               
             </div>
@@ -143,7 +143,7 @@ listarLocalStorage()
               <img src={MonitorDell2} alt="Monitor Dell 2" />
               <div className="card-info" >
                 <p>Monitor para videoconferência Dell Pro 34 Plus - P3424WEB</p>
-                <span className="preco">R$ 1.532,75</span>
+                <span className="preco">1532,75</span>
               </div>
             </div>
 
@@ -151,7 +151,7 @@ listarLocalStorage()
               <img src={MonitorDell3} alt="Monitor Dell 3" />
               <div className="card-info">
                 <p>Monitor Curvo Ultrasharp de 49 com hub USB-C Dell – U4924DW</p>
-                <span className="preco">R$ 3.405,75</span>
+                <span className="preco">3405,75</span>
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@ listarLocalStorage()
               <img src={MonitorHP1} alt="HP V22b" />
               <div className="card-info">
                 <p>Monitor Hp V22b 21,5 Full Hd Hdmi Dp Ajuste Altura Mostruário Preto</p>
-                <span className="preco">R$ 645,89</span>
+                <span className="preco">645,89</span>
               </div>
             </div>
 
@@ -171,7 +171,7 @@ listarLocalStorage()
               <img src={MonitorHP2} alt="HP E24 G5" />
               <div className="card-info">
                 <p>Monitor HP E24 G5 24” Full HD</p>
-                <span className="preco">R$ 967,00</span>
+                <span className="preco">967,00</span>
               </div>
             </div>
 
@@ -179,7 +179,7 @@ listarLocalStorage()
               <img src={MonitorHP3} alt="HP V22i" />
               <div className="card-info">
                 <p>Monitor Hp Profissional V22b 21,5 Hdmi Vga Dp Full</p>
-                <span className="preco">R$ 599,00</span>
+                <span className="preco">599,00</span>
               </div>
             </div>
           </div>
@@ -191,7 +191,7 @@ listarLocalStorage()
               <img src={MonitorLenovo1} alt="Lenovo 1" />
               <div className="card-info">
                 <p>Monitor Lenovo TC tiny in one 21.5" Gen 3</p>
-                <span className="preco">R$ 949,99</span>
+                <span className="preco">949,99</span>
               </div>
             </div>
 
@@ -199,7 +199,7 @@ listarLocalStorage()
               <img src={MonitorLenovo2} alt="Lenovo 2" />
               <div className="card-info">
                 <p>Monitor Lenovo 23.8” LED Wide Full HD</p>
-                <span className="preco">R$ 930,99</span>
+                <span className="preco">930,99</span>
               </div>
             </div>
 
@@ -207,7 +207,7 @@ listarLocalStorage()
               <img src={MonitorLenovo3} alt="Lenovo 3" />
               <div className="card-info">
                 <p>Monitor Lenovo Thinkvision T22i-30 21.5"63b0mar1br</p>
-                <span className="preco">R$ 956,13</span>
+                <span className="preco">956,13</span>
               </div>
             </div>
           </div>
