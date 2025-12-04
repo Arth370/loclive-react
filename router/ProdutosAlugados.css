@@ -1,5 +1,6 @@
 /* ===== CONTAINER PRINCIPAL ===== */
 
+
 .produtos-alugados-container {
     width: 85%;
     margin: 2vw auto;
@@ -112,3 +113,151 @@
     color: #777;
   }
   
+
+.produtos-alugados {
+  width: 85%;
+  margin: 2vw auto;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+/* Títulos */
+.titulo {
+  font-size: 2.5vw;
+  font-weight: 800;
+  margin-bottom: 0.5vw;
+  color: #ffffff; 
+}
+
+.subtitulo {
+  font-size: 1.1vw;
+  color: #e5e5e5;
+  margin-bottom: 2vw;
+}
+
+/* ===== CARDS DE ESTATÍSTICA ===== */
+
+.linha-cards {
+  display: flex;
+  gap: 1.5vw;
+  margin-bottom: 2vw;
+}
+
+.card-info {
+  width: 20%;
+  background: #111111; /* preto suave */
+  border-radius: 14px;
+  padding: 1.5vw;
+  box-shadow: 0 0 18px rgba(0,0,0,0.4);
+  border: 1px solid #2c2c2c;
+  transition: 0.2s;
+}
+
+.card-info:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(0,0,0,0.65);
+}
+
+.card-info p {
+  font-size: 1vw;
+  color: #e5e5e5;
+}
+
+.card-info h2 {
+  margin: .4vw 0;
+  font-size: 2vw;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.card-info span {
+  font-size: .9vw;
+  color: #bbbbbb;
+}
+
+/* ===== BUSCA + FILTROS ===== */
+
+.filtros-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2vw;
+  gap: 2vw;
+  width: 100%; 
+}
+
+/* INPUT DE BUSCA */
+.input-busca {
+  flex: 1; 
+  max-width: 60vw; 
+  padding: .9vw 1.1vw;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  background: #0a0a0a;
+  color: #fff;
+  font-size: .95vw;
+}
+
+.input-busca::placeholder {
+  color: #ffffff;
+}
+
+/* CONTAINER DOS BOTÕES */
+.filtros-botoes {
+  display: flex;
+  align-items: center;
+  gap: .8vw;
+  flex-shrink: 0; 
+}
+
+/* BOTÕES */
+.filtros-botoes button {
+  border: 1px solid #ffffff;
+  background: #0a0a0a;
+  color: #ffffff;
+  padding: .7vw 1.4vw;
+  font-size: .9vw;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.filtros-botoes button:hover {
+  background: #ffb800;
+  color: #000;
+}
+
+/* BOTÃO ATIVO */
+.filtros-botoes .ativo {
+  background: #ffb800;
+  color: #000;
+  border-color: #ffb800;
+}
+
+
+
+/* ===== ÁREA VAZIA ===== */
+
+.area-vazia {
+  text-align: center;
+  margin-top: 5vw;
+}
+
+.area-vazia img {
+  width: 8vw;
+  opacity: .9;
+}
+
+.area-vazia h3 {
+  margin-top: 1vw;
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.area-vazia p {
+  margin-top: .5vw;
+  font-size: 1.1vw;
+  color: #e5e5e5;
+}
