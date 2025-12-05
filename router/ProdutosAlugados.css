@@ -261,3 +261,31 @@
   font-size: 1.1vw;
   color: #e5e5e5;
 }
+.item-alug{
+      background: rgba(255, 255, 255, 0.08);
+    border-left: 4px solid #ffb703;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin: 10px 0;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    color: white;
+    width: 30vw;
+}
+  .item-alug:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 183, 3, 0.5);
+  }
+.alug-info{
+  color: white;
+  font-size: 1vw;
+}
+.caixa-alugueis{
+  display: flex;
+  gap: 1vw;
+}
+.status{
+  color: chartreuse;
+}

@@ -21,7 +21,7 @@ function Carrinho() {
         
         // Obtém o valor associado a essa chave
        
-        if(chave != 'nome' && chave!='senha'&& chave!='email'){
+        if(chave != 'nome' && chave!='senha'&& chave!='email'&&chave!='id'){
           allItems[chave] = JSON.parse(localStorage.getItem(chave));
          
           total = total + (allItems[chave].preco * allItems[chave].qnt)
@@ -36,15 +36,44 @@ function Carrinho() {
     
   }
   const objetos = Object.values(allItems)
-  console.log(total)
+  console.log(localStorage.getItem('id'))
 
   // Carrinho começa vazio
- 
-
   const [metodo, setMetodo] = useState('cartao');
 
+const handleSubmit = async(event) =>{
+for(let o=0; 0<objetos.length;o++){
+    event.preventDefault()
+ 
+  const aluguel ={
+    id_user:localStorage.getItem('id'),
+    produto:objetos[o].produto,
+    forma_pagamento:metodo,
+    preco_produto:objetos[o].preco,
+    quantidade:objetos[o].qnt,
+    status:'Em dia'
+  }
+   console.log(aluguel)
+  try{
+    const response = await fetch('http://localhost:3333/api/alugueis',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json'
+      },
+      body:JSON.stringify(aluguel)
+    })
+    const data = await response.json()
+    if(response.ok){
+      alert("aluguel salvo")
+    }else{
+      alert(`Erro: ${data.message}`)
+    }
 
-
+  }catch(error){
+    console.log(error)
+  }
+}
+}
 
   return (
     <>
@@ -124,7 +153,7 @@ function Carrinho() {
             </button>
           ) : (
             <Link to={'/Confirmação'}>
-              <button className="btn-finalizar">Finalizar Compra</button>
+              <button className="btn-finalizar" onClick={handleSubmit}>Finalizar Compra</button>
             </Link>
           )}
         </div>

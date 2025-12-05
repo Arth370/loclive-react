@@ -36,6 +36,7 @@ function Login() {
                 localStorage.setItem('nome',confirmar.nome)
                 localStorage.setItem('email',confirmar.email)
                 localStorage.setItem('senha',senha)
+                localStorage.setItem('id',confirmar.id)
                 if(localStorage.getItem('nome')!=undefined){
                    console.log('ta ai')
                    window.location.href = 'http://localhost:5173/produtos'

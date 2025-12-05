@@ -6,6 +6,7 @@ import {userModel} from "./users/UserModel.js"
 
 import UserRoutes from "./users/UserRoutes.js"
 import produtosRoutes from "./produtos/produtosRoutes.js"
+import aluguelRoutes from './aluguel/aluguelRoutes.js'
 
 const app = express()
 
@@ -21,6 +22,12 @@ app.use(express.json())
 app.use("/api/produtos",produtosRoutes);
 
 app.get("/api/produtos",(req,res)=>{
+    res.status(200).json("App")
+})
+
+app.use("/api/alugueis",aluguelRoutes);
+
+app.get("/api/alugueis",(req,res)=>{
     res.status(200).json("App")
 })
 

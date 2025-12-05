@@ -59,22 +59,21 @@ listarLocalStorage()
 
       const div = document.getElementById(a);
       const testando = a
-      function teste(a,b,c,d){
-        if(localStorage.getItem(`${d}`)){
-          let valor = JSON.parse(localStorage.getItem(`${d}`))
+      function teste(a,b,c,testando){
+        console.log(testando  )
+        if(!localStorage.getItem(testando)){
+          let obj = {imagem:a,produto:b,preco:c, qnt:1}
+          localStorage.setItem(`${testando}`,JSON.stringify(obj))
+          alert('item adicionado ao carrinho')
+        }else{
+          let valor = JSON.parse(localStorage.getItem(`${testando}`))
           valor.qnt++
           console.log(valor.qnt)
-          localStorage.setItem(`${d}`,JSON.stringify(valor))
-          alert('item adicionado ao carrinho')
-
-          
-        }else{
-          let obj = {imagem:a,produto:b,preco:c, qnt:1}
-          localStorage.setItem(`${d}`,JSON.stringify(obj))
+          localStorage.setItem(`${testando}`,JSON.stringify(valor))
           alert('item adicionado ao carrinho')
         }
       }
-      console.log(meuPopUp)
+
       Imagem.src=div.firstElementChild.src
       Nome.textContent=div.lastElementChild.firstElementChild.textContent
       Preco.textContent=` R$ ${div.lastElementChild.lastElementChild.textContent}`
